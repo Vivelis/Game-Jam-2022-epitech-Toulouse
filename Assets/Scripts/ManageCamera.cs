@@ -6,8 +6,9 @@ public class ManageCamera : MonoBehaviour
 {
     private Transform playerTransform;
     private Transform mainCamera;
-    [Range(1, 100)]
-    public float zPos = 10;
+    private float zPos = 10;
+    [Range(0,1)] [SerializeField]
+    private float cameraSpeed = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -18,10 +19,11 @@ public class ManageCamera : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void FixedUpdate()
     {
         Vector3 pos = playerTransform.position;
         pos.z -= zPos;
-        mainCamera.SetPositionAndRotation(pos, playerTransform.rotation);
+        Vector3 lerpPosition = Vector3.Lerp(transform.position, pos, cameraSpeed);
+        mainCamera.position = lerpPosition;
     }
 }
