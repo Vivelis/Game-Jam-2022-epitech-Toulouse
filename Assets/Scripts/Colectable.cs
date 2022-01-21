@@ -13,12 +13,6 @@ public class Colectable : MonoBehaviour
         col = GetComponent<Collider2D>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void OnTriggerEnter2D(Collider2D _collision)
     {
         ManagePlayer playerScript = _collision.gameObject.GetComponent<ManagePlayer>();
