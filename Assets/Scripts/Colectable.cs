@@ -5,6 +5,7 @@ using UnityEngine;
 public class Colectable : MonoBehaviour
 {
     private Collider2D col;
+    public string element = "None";
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,11 @@ public class Colectable : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        ManagePlayer playerScript = col.gameObject.GetComponent<ManagePlayer>();
+        if (playerScript != null)
+            playerScript.SetElement(element);
+        else
+            Debug.Log("error: player don't have ManagePlayer script");
         col.gameObject.SetActive(false);
     }
 }
