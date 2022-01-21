@@ -19,9 +19,9 @@ public class Colectable : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D _collision)
     {
-        ManagePlayer playerScript = col.gameObject.GetComponent<ManagePlayer>();
+        ManagePlayer playerScript = _collision.gameObject.GetComponent<ManagePlayer>();
         if (playerScript != null)
             playerScript.SetElement(element);
         else
