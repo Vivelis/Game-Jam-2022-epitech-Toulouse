@@ -13,7 +13,6 @@ public class MovePlayer : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         float horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
@@ -26,6 +25,10 @@ public class MovePlayer : MonoBehaviour
     {
         Vector3 targetVelocity = new Vector2(_horizontalMovement, _verticalMovement);
         Vector3 v3Velocity = rb.velocity;
+        if (Input.GetButton("Horizontal") && Input.GetButton("Vertical"))
+        {
+            targetVelocity = targetVelocity / 2;
+        }
         transform.Translate(targetVelocity * Time.deltaTime, Space.World);
     }
 }
