@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7058296089062961465}
   - component: {fileID: 7058296089062961466}
   m_Layer: 0
-  m_Name: WindLight
+  m_Name: NoneLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.15487158, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.6037736, g: 0.6037736, b: 0.6037736, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 7058296089903972392}
   - component: {fileID: 7058296089903972393}
   m_Layer: 0
-  m_Name: Wind
+  m_Name: None
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
