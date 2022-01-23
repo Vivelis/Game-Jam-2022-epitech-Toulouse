@@ -10,4 +10,9 @@ public class ManagePlayer : MonoBehaviour
     {
         myElement = _element;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
 }

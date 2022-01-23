@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class MovePlayer : MonoBehaviour
 {
-    public float moveSpeed;
+    [SerializeField]
+    private float moveSpeed;
     private Rigidbody2D rb;
     private Vector3 velocity = Vector3.zero;
+    private Animator animator;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -20,15 +23,32 @@ public class MovePlayer : MonoBehaviour
 
         movePlayer(horizontalMovement, verticalMovement);
     }
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.eulerAngles = new Vector3(0, 180, 0);
+            animator.SetBool("IsPressed", true);
+        }
+        else if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0);
+            animator.SetBool("IsPressed", true);
+        }
+        else if (Input.GetKey(KeyCode.UpArrow))
+            animator.SetBool("IsPressed", true);
+        else if (Input.GetKey(KeyCode.DownArrow))
+            animator.SetBool("IsPressed", true);
+        else
+        {
+            animator.SetBool("IsPressed", false);
+        }
+    }
 
     void movePlayer(float _horizontalMovement, float _verticalMovement)
     {
         Vector3 targetVelocity = new Vector2(_horizontalMovement, _verticalMovement);
         Vector3 v3Velocity = rb.velocity;
-        if (Input.GetButton("Horizontal") && Input.GetButton("Vertical"))
-        {
-            targetVelocity = targetVelocity / 2;
-        }
         transform.Translate(targetVelocity * Time.deltaTime, Space.World);
     }
 }
