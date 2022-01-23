@@ -84,6 +84,7 @@ GameObject:
   - component: {fileID: 7058296089903972399}
   - component: {fileID: 7058296089903972392}
   - component: {fileID: 7058296089903972393}
+  - component: {fileID: 1191760915746022369}
   m_Layer: 0
   m_Name: Wind
   m_TagString: Untagged
@@ -146,7 +147,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 9
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Sprite: {fileID: -693299315980611372, guid: 6e863b9023b600944bcfe75f3e4129e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -186,3 +187,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementsToActiveArr: []
+--- !u!95 &1191760915746022369
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7058296089903972394}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d3e62dc501412104eb3ccca1cfdc0cb0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
