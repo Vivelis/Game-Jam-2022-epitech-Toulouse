@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3236810948202212709}
   - component: {fileID: 3283741807615082066}
   - component: {fileID: -1415304809187054510}
+  - component: {fileID: 6518071242903050493}
   m_Layer: 0
-  m_Name: Ennemy
-  m_TagString: Untagged
+  m_Name: Enemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 6138838795542399749}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -95,3 +96,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0c6967e2e171c74583adcf73dc71f5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6518071242903050493
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6138838795542399749}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5216747, y: 0.58005375, z: 0.2}
+  m_Center: {x: 0.004608184, y: -0.22810724, z: 0}

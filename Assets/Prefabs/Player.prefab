@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3136010419308787557}
   - component: {fileID: 3136010419308787556}
   - component: {fileID: 3136010419308787559}
-  - component: {fileID: 3136010419308787558}
   - component: {fileID: 1012034794}
+  - component: {fileID: 5155389680622392486}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edfdf947afd7ae4488302c018e94dad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 800
+  moveSpeed: 500
+  animator: {fileID: 1012034794}
 --- !u!50 &3136010419308787556
 Rigidbody2D:
   serializedVersion: 4
@@ -147,19 +148,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.41818428, y: 0.55394125}
   m_EdgeRadius: 0
---- !u!114 &3136010419308787558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3136010419308787553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06022ed05ade38144ae54dc9dfe2d6a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myElement: None
 --- !u!95 &1012034794
 Animator:
   serializedVersion: 3
@@ -179,3 +167,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5155389680622392486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3136010419308787553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06022ed05ade38144ae54dc9dfe2d6a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myElement: None

@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class MovePlayer : MonoBehaviour
 {
-    public float moveSpeed;
+    [SerializeField]
+    private float moveSpeed;
     private Rigidbody2D rb;
     private Vector3 velocity = Vector3.zero;
-    public Animator animator;
+    private Animator animator;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
