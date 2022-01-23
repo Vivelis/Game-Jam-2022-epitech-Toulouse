@@ -21,9 +21,9 @@ The player should pick up orbes to change of element.</br>
 Each element allow him to fight against a specific type of enemy.
 
 ## Screenshots
-* ![Screenshot1](/Screenshots/Screenshot1)
-* ![Screenshot2](/Screenshots/Screenshot2)
-* ![Screenshot3](/Screenshots/Screenshot3)
+* ![Screenshot1](/Screenshots/Screenshot1.png)
+* ![Screenshot2](/Screenshots/Screenshot2.png)
+* ![Screenshot3](/Screenshots/Screenshot3.png)
 
 ***
 
@@ -41,6 +41,6 @@ Le joueur doit ramasser une orbe pour changer d'élément.</br>
 Chaque élément lui permet de batre un certain type d'ennemi.
 
 ## Screenshots
-* ![Screenshot1](/Screenshots/Screenshot1)
-* ![Screenshot2](/Screenshots/Screenshot2)
-* ![Screenshot3](/Screenshots/Screenshot3)
+* ![Screenshot1](/Screenshots/Screenshot1.png)
+* ![Screenshot2](/Screenshots/Screenshot2.png)
+* ![Screenshot3](/Screenshots/Screenshot3.png)
